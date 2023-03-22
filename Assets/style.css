@@ -15,8 +15,11 @@ nav {
 a {
     text-decoration: none;
     color: #222831;
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 main {
     background-color: #222831;
+    color: #32e0c4;
 }

@@ -17,6 +17,18 @@ nav {
     background-color: #32e0c4;
 }
 
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #222831;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #32e0c4;
+}
+
 nav a {
     text-decoration: none;
     color: #222831;
@@ -49,6 +61,15 @@ main {
     padding-top: 5vh;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.informations {
+    padding-left: 5vw;
+}
+
 .meimg {
     width: 22%;
     height: 22%;
@@ -73,16 +94,12 @@ main {
     color: #d9d9d9;
 }
 
+#Home p {
+    color: #d9d9d9;
+}
+
 h2 {
     font-size: 2.5em;
-}
-
-#About {
-    padding: 3vh 15vh 3vh 15vh;
-}
-
-#About p {
-    color: #d9d9d9;
 }
 
 .info_bold {
@@ -97,7 +114,7 @@ h2 {
 .info_line {
     padding-top: 3vh;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
 }
 
 .message {
@@ -130,9 +147,14 @@ h2 {
     text-align: center;
 }
 
+.card-center {
+    display: flex;
+    justify-content: space-around;
+}
+
 .elmt {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-evenly;
 }
 
@@ -174,16 +196,39 @@ li {
     padding-bottom: 2vh;
 }
 
-
-
-.uwu {
-    background-color: #32e0c4;
-    color: #32e0c4;
+#Portfolio {
+    padding: 3vh 15vh 3vh 15vh;
 }
 
+#Contact {
+    text-align: center;
+    color: #222831;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.linkedin {
+    width: 10vh;
+    height: 10vh;
+}
+.download {
+    width: 8vh;
+    height: 8vh;
+}
+.github {
+    padding-left: 1vh;
+    width: 7vh;
+    height: 7vh;
+}
+#Contact p {
+    padding: 1vh;
+}
 footer {
     background-color: #32e0c4;
-    height: 30vh;
 }
 
 footer a {

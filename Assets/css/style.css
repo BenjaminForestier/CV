@@ -200,6 +200,31 @@ li {
     padding: 3vh 15vh 3vh 15vh;
 }
 
+.projets {
+    padding-top: 5vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.projet {
+    margin-bottom: 5vh;
+    width: 40vw;
+}
+.projet img {
+    width: 100%;
+}
+.projet p {
+    padding-top: 2vh;
+}
+.a-venir {
+    padding-top: 20vh;
+    background-color: #d9d9d9;
+    height: 20vh;
+    color: #222831;
+    font-size: 1.5em;
+    text-align: center;
+}
 #Contact {
     text-align: center;
     color: #222831;
@@ -211,22 +236,28 @@ li {
     justify-content: center;
     align-items: center;
 }
+
 .linkedin {
     width: 10vh;
     height: 10vh;
 }
+
 .download {
     width: 8vh;
     height: 8vh;
 }
+
 .github {
     padding-left: 1vh;
     width: 7vh;
     height: 7vh;
 }
+
 #Contact p {
     padding: 1vh;
+    font-size: 1.2em;
 }
+
 footer {
     background-color: #32e0c4;
 }

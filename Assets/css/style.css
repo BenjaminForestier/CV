@@ -40,8 +40,11 @@ nav a:hover {
     color: #d9d9d9;
 }
 
-main {
+body {
     background-color: #222831;
+}
+
+main {
     color: #32e0c4;
 }
 
@@ -50,11 +53,11 @@ main {
 }
 
 .me {
-    font-size: 5em;
+    font-size: 5rem;
 }
 
 .job {
-    font-size: 2.5em;
+    font-size: 3rem;
 }
 
 .ltlinfo {
@@ -269,8 +272,110 @@ footer a {
     text-decoration: none;
 }
 
-/* .mylink {
-    background-color: #32e0c4;
+/* BURGER MENU */
 
-    border-right: 50%;
+.burger-menu {
+    display: none;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    background-color: #222831;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fa-solid.fa-bars {
+    color: #32e0c4;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .burger-menu {
+        display: block;
+    }
+
+    nav {
+        height: 100%;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}
+
+/* FIN BURGER MENU */
+
+@media only screen and (max-width: 768px) {
+    /* HOME */
+
+    #Home {
+        padding: 1rem;
+    }
+
+    .me {
+        font-size: 3rem;
+    }
+
+    .job {
+        font-size: 2rem;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: top;
+        gap: 1rem;
+    }
+
+    .meimg {
+        height: 100%;
+        width: 100%;
+    }
+
+    .homebutton {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    /* SKILLS */
+
+    #Skills {
+        padding: 1rem;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    /* TIMELINE */
+
+    #Timeline {
+        padding: 1rem;
+    }
+
+    /* PORTFOLIO */
+
+    #Portfolio {
+        padding: 1rem;
+    }
+
+    .projets {
+        gap: 1rem;
+    }
+
+    .projet {
+        width: 100%
+    }
 }
